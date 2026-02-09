@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Veronika Wang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Veronika Wang" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reachone.html">ReachOne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="poetry.html">Poetry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glow.html">G.L.O.W</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personal.html">Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">Let's connect and collaborate</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-5">
+                    <div class="contact-info-card">
+                        <h2>Let's Connect</h2>
+                        <p>I'm always excited to discuss new opportunities, collaborations, or just chat about robotics, AI, and making the world a better place through technology.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:veronikawang69@gmail.com">veronikawang69@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Greater Boston Area, MA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="availability-card mt-4">
+                            <h4><i class="bi bi-calendar-check"></i> Currently Available For</h4>
+                            <ul>
+                                <li>Research collaborations</li>
+                                <li>Speaking engagements</li>
+                                <li>Mentorship opportunities</li>
+                                <li>STEM outreach partnerships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm" onsubmit="return validateForm(event)">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback" id="emailError">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject">
+                                    <option value="">Select a topic...</option>
+                                    <option value="collaboration">Research Collaboration</option>
+                                    <option value="speaking">Speaking Opportunity</option>
+                                    <option value="mentorship">Mentorship</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                <i class="bi bi-send"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="alert alert-success mt-4" style="display: none;">
+                            <i class="bi bi-check-circle-fill"></i> Thank you for your message! I'll get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Quick Links</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="index.html" class="quick-link-card">
+                        <i class="bi bi-person-fill"></i>
+                        <h4>About Me</h4>
+                        <p>Learn more about my background</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="experience.html" class="quick-link-card">
+                        <i class="bi bi-briefcase-fill"></i>
+                        <h4>Experience</h4>
+                        <p>View my projects and work</p>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <a href="education.html#awards" class="quick-link-card">
+                        <i class="bi bi-trophy-fill"></i>
+                        <h4>Awards</h4>
+                        <p>See my achievements</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Veronika Wang. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:veronikawang69@gmail.com" class="footer-link">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

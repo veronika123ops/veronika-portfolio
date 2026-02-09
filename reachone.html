@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReachOne | Veronika Wang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Veronika Wang" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reachone.html">ReachOne</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="poetry.html">Poetry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glow.html">G.L.O.W</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personal.html">Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="intro-section-reachone">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 intro-image-wrapper">
+                    <img src="introreachone.png" alt="ReachOne - Revolutionizing Disaster Response with AI-Powered Robotics" class="intro-image-main">
+                </div>
+                <div class="col-lg-6 intro-content-wrapper">
+                    <h2 class="intro-greeting">Hi, I'm Veronika Wang</h2>
+                    <p class="intro-text">
+                        ReachOne started as a vision—a response to watching communities struggle in the critical hours after disasters strike. 
+                        As a high school student passionate about robotics and AI, I saw a gap between what technology could do and what 
+                        responders actually had access to when lives were on the line.
+                    </p>
+                    <p class="intro-text">
+                        My inspiration comes from understanding that every minute matters in disaster response. The first hour after impact 
+                        can determine outcomes, yet responders often work blind—navigating debris, smoke, and unstable structures without 
+                        real-time intelligence. ReachOne is my answer: combining autonomous drones, multimodal sensor fusion, and real-time 
+                        AI to provide actionable intelligence when it matters most.
+                    </p>
+                    <p class="intro-text">
+                        Right now, I'm building ReachOne from prototype to startup. I'm iterating on field testing, refining the sensor 
+                        fusion algorithms, and developing ReachLink—the companion app that connects communities with responders. I'm working 
+                        with mentors, presenting at conferences, and learning what it takes to turn research into deployable technology.
+                    </p>
+                    <p class="intro-text intro-vision">
+                        <strong>Where I hope this goes:</strong> I envision ReachOne becoming a trusted platform for disaster response 
+                        organizations worldwide. I want to see these systems deployed in the field, actually saving lives and reducing response 
+                        times. My goal is to bridge the gap between cutting-edge robotics research and real-world humanitarian impact—making 
+                        advanced technology accessible to those who need it most, when they need it most.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="reachone-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content-reachone">
+                    <h1 class="reachone-title">ReachOne</h1>
+                    <p class="reachone-subtitle">Disaster-response robotics + AI for faster, safer post-disaster search and rescue</p>
+                    <p class="reachone-overview">
+                        ReachOne is an integrated system combining autonomous UAV platforms, multimodal sensor fusion (LiDAR + thermal imaging), 
+                        and real-time machine learning to provide actionable intelligence in the critical first hours after natural disasters. 
+                        By detecting survivors, mapping hazards, and coordinating response resources, ReachOne aims to reduce response time and 
+                        improve outcomes for communities facing catastrophic events.
+                    </p>
+                    
+                    <!-- Project Snapshot Badges -->
+                    <div class="project-snapshot mt-4 mb-5">
+                        <span class="snapshot-badge">Role: Founder / Builder</span>
+                        <span class="snapshot-badge">Focus: Robotics, AI/ML, Sensor Fusion, UAV Testing</span>
+                        <span class="snapshot-badge">Domain: Disaster Relief / Search & Rescue</span>
+                        <span class="snapshot-badge">Stage: Prototype + Research + Field-oriented testing</span>
+                    </div>
+
+                    <!-- Hero Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#poster-section" class="btn btn-primary-custom">See Poster</a>
+                        <a href="#technical-approach" class="btn btn-outline-custom">Read Technical Approach</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image-reachone">
+                    <img src="reachone-prototype.png" alt="ReachOne prototype" class="hero-image-large">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Problem → Why It Matters</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="problem-list">
+                        <li><strong>Limited visibility:</strong> Debris, smoke, and structural collapse create zero-visibility conditions that slow manual search operations</li>
+                        <li><strong>Blocked and unstable access:</strong> Responders face significant safety risks navigating collapsed structures and unstable terrain</li>
+                        <li><strong>GPS-denied and rapidly changing environments:</strong> Traditional mapping systems fail when infrastructure is destroyed and conditions change minute-by-minute</li>
+                        <li><strong>Fragmented communication and resource coordination:</strong> Multiple agencies and volunteers struggle to share real-time intelligence and coordinate effectively</li>
+                    </ul>
+                    <p class="problem-statement mt-4">
+                        <strong>ReachOne aims to close the first-hour gap between impact and actionable rescue intelligence.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture Section -->
+    <section class="content-section bg-soft">
+        <div class="container">
+            <h2 class="section-title">The System</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Architecture Diagram (CSS-based) -->
+                    <div class="architecture-diagram">
+                        <div class="arch-row arch-top">
+                            <div class="arch-box arch-uav">
+                                <i class="bi bi-airplane"></i>
+                                <h4>UAV Platform</h4>
+                                <p>Autonomous drone for mapping & coverage</p>
+                            </div>
+                        </div>
+                        
+                        <div class="arch-row arch-middle">
+                            <div class="arch-box arch-sensor">
+                                <i class="bi bi-radar"></i>
+                                <h4>LiDAR</h4>
+                                <p>3D mapping & structure detection</p>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-box arch-compute">
+                                <i class="bi bi-cpu"></i>
+                                <h4>Edge Compute</h4>
+                                <p>Jetson-class real-time inference</p>
+                            </div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-box arch-sensor">
+                                <i class="bi bi-thermometer-high"></i>
+                                <h4>Thermal Imaging</h4>
+                                <p>Heat signature detection</p>
+                            </div>
+                        </div>
+
+                        <div class="arch-row arch-middle">
+                            <div class="arch-box arch-fusion">
+                                <i class="bi bi-diagram-3"></i>
+                                <h4>ML Fusion Module</h4>
+                                <p>LiDAR + Thermal → Detection & Mapping</p>
+                            </div>
+                        </div>
+
+                        <div class="arch-row arch-bottom">
+                            <div class="arch-box arch-output">
+                                <i class="bi bi-map"></i>
+                                <h4>Hazard Map</h4>
+                            </div>
+                            <div class="arch-box arch-output">
+                                <i class="bi bi-person-check"></i>
+                                <h4>Survivor Detection</h4>
+                            </div>
+                            <div class="arch-box arch-output">
+                                <i class="bi bi-route"></i>
+                                <h4>Responder Routing</h4>
+                            </div>
+                            <div class="arch-box arch-output">
+                                <i class="bi bi-phone"></i>
+                                <h4>ReachLink App</h4>
+                                <p>Community alerts & coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Approach Section -->
+    <section class="content-section" id="technical-approach">
+        <div class="container">
+            <h2 class="section-title">Technical Approach</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <div class="tech-section mb-5">
+                        <h3 class="tech-subtitle">Sensor Fusion: LiDAR + Thermal</h3>
+                        <p>
+                            LiDAR provides precise 3D structural mapping and can penetrate smoke and dust, while thermal imaging detects 
+                            human heat signatures even when visual identification is impossible. Fusion combines these modalities: LiDAR 
+                            identifies potential void spaces and structural hazards, while thermal confirms human presence. The combined 
+                            tensor improves detection robustness—where one sensor fails (e.g., thermal in high ambient heat), the other 
+                            compensates (LiDAR structure analysis).
+                        </p>
+                    </div>
+
+                    <div class="tech-section mb-5">
+                        <h3 class="tech-subtitle">ML/AI: Survivor & Hazard Detection</h3>
+                        <p>
+                            The detection pipeline uses CNN-based models trained on multimodal datasets. Fusion tensors combine LiDAR 
+                            point clouds with thermal image patches, enabling the model to learn spatial-thermal correlations. The system 
+                            outputs bounding boxes for survivors, hazard classifications (unstable structures, fire zones, blocked paths), 
+                            and confidence scores. Training emphasizes robustness across lighting conditions, debris types, and environmental 
+                            variations encountered in real disaster scenarios.
+                        </p>
+                    </div>
+
+                    <div class="tech-section mb-5">
+                        <h3 class="tech-subtitle">Mapping / SLAM</h3>
+                        <p>
+                            In GPS-denied and rapidly changing environments, the system builds local maps using SLAM (Simultaneous 
+                            Localization and Mapping) techniques. LiDAR scans are registered and fused with IMU/GPS data (when available) 
+                            to create real-time 3D maps. The mapping pipeline tracks changes over time—identifying new collapses, cleared 
+                            paths, or shifting hazards—enabling dynamic route planning for responders. This is critical because disaster 
+                            sites evolve continuously; a map from 30 minutes ago may be obsolete.
+                        </p>
+                    </div>
+
+                    <div class="tech-section mb-5">
+                        <h3 class="tech-subtitle">Latency & Reliability</h3>
+                        <p>
+                            Design goal: near-real-time inference (< 2 seconds from sensor capture to actionable output) with high 
+                            reliability. "Almost working isn't enough" in disaster response—false positives waste resources, false 
+                            negatives cost lives. The system runs inference on edge compute (Jetson-class hardware) to avoid network 
+                            dependency. Redundancy checks, confidence thresholds, and fallback modes ensure the system degrades gracefully 
+                            if sensors fail or conditions exceed design parameters.
+                        </p>
+                    </div>
+
+                    <div class="tech-section mb-5">
+                        <h3 class="tech-subtitle">Testing & Iteration</h3>
+                        <p>
+                            Development follows test-fail-learn cycles. Each iteration addresses specific failure modes identified in 
+                            controlled and field testing:
+                        </p>
+                        <ul class="iteration-list">
+                            <li><strong>Detection accuracy:</strong> Improved from ~65% to ~88% through dataset augmentation and fusion architecture refinement</li>
+                            <li><strong>Latency:</strong> Reduced inference time from 5+ seconds to < 2 seconds via model optimization and edge compute tuning</li>
+                            <li><strong>Robustness:</strong> Enhanced performance in low-visibility conditions through thermal-LiDAR fusion and adaptive thresholds</li>
+                            <li><strong>Mapping stability:</strong> Reduced SLAM drift through improved sensor calibration and loop closure detection</li>
+                            <li><strong>Field validation:</strong> Tested in simulated debris fields and controlled smoke environments to validate real-world performance</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drone + LiDAR Testing Section -->
+    <section class="content-section bg-soft">
+        <div class="container">
+            <h2 class="section-title">Drone + LiDAR Testing</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="reachone-prototype2.png" alt="ReachOne drone and LiDAR testing" class="section-image-large">
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        Field validation of the ReachOne system involved deploying UAV platforms equipped with LiDAR sensors in controlled 
+                        disaster simulation environments. Testing focused on validating detection algorithms in realistic conditions: low 
+                        visibility scenarios, cluttered debris fields, and varying lighting conditions. The drone platform enabled rapid 
+                        coverage of large areas while collecting high-resolution 3D point cloud data for offline and real-time processing.
+                    </p>
+                    
+                    <div class="validation-box mt-4">
+                        <h4 class="validation-title">Validation Notes</h4>
+                        <ul class="validation-list">
+                            <li><strong>What was tested:</strong> Detection accuracy in low visibility conditions, mapping precision in cluttered environments, 
+                            real-time inference latency, and system reliability under varying environmental conditions</li>
+                            <li><strong>What improved over iterations:</strong> Detection accuracy increased from 65% to 88%, inference latency reduced from 
+                            5+ seconds to < 2 seconds, robustness in smoke/dust conditions improved through fusion architecture, and mapping 
+                            stability enhanced via improved sensor calibration</li>
+                            <li><strong>What remains next:</strong> Scaling to larger datasets, expanded real-world field trials in collaboration with 
+                            disaster response organizations, integration testing with ReachLink app, and optimization for additional sensor modalities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ReachLink Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">ReachLink</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="mb-4">
+                        ReachLink is a humanitarian coordination app that complements the UAV sensor platform by enabling community-driven 
+                        intelligence and resource coordination.
+                    </p>
+                    <ul class="reachlink-features">
+                        <li><strong>Real-time alerts and geofenced updates:</strong> Push notifications to users in affected areas with hazard maps, 
+                        survivor locations (anonymized), and safe route recommendations</li>
+                        <li><strong>Matching needs, resources, and responders:</strong> AI-powered matching algorithm connects people in need with 
+                        available resources (medical supplies, shelter, transportation) and coordinates volunteer responders</li>
+                        <li><strong>Community reporting and situational updates:</strong> Crowdsourced reports from community members supplement sensor 
+                        data, providing ground-level intelligence that complements aerial mapping</li>
+                    </ul>
+                    
+                    <div class="ai-impact-box mt-4">
+                        <h4 class="ai-impact-title">Why AI Matters Here</h4>
+                        <p>
+                            AI enables intelligent prioritization of alerts based on severity and proximity, optimal routing of responders 
+                            considering real-time hazard maps, de-duplication of reports to reduce information overload, and triage assistance 
+                            for medical resources. The system learns from patterns across multiple disaster events to improve coordination 
+                            effectiveness over time.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="reachone-app.png" alt="ReachLink app interface" class="section-image-large">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster / Publications Section -->
+    <section class="content-section bg-soft" id="poster-section">
+        <div class="container">
+            <h2 class="section-title">Poster / Publications</h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Poster Image Placeholder -->
+                    <div class="poster-card mb-5">
+                        <div class="poster-image-wrap">
+                            <img src="researchposter.png" alt="ReachOne research poster - disaster-response robotics and AI" class="poster-image">
+                        </div>
+                    </div>
+
+                    <div class="key-findings-box">
+                        <h4 class="findings-title">Key Findings</h4>
+                        <ul class="findings-list">
+                            <li>Multimodal sensor fusion (LiDAR + thermal) improves detection robustness by 23% compared to single-modality approaches</li>
+                            <li>Community alerts via ReachLink app augment sensor data, providing ground-level intelligence that complements aerial mapping</li>
+                            <li>Sub-second inference target achieved on edge compute hardware, enabling near-real-time decision support</li>
+                            <li>SLAM-based mapping enables dynamic route planning in GPS-denied environments, critical for post-disaster scenarios</li>
+                            <li>Field validation demonstrates 88% detection accuracy in controlled disaster simulation environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media / Gallery Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Media / Gallery</h2>
+            <div class="row gallery-grid">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="reachone-poster-pres.png" alt="ReachOne poster presentation" class="gallery-media-large poster-pres-image">
+                        <p class="gallery-caption">Poster presentation</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="reachone-poster2.png" alt="ReachOne presentation" class="gallery-media-large">
+                        <p class="gallery-caption">Presentation</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="reachone-prototype2.png" alt="ReachOne prototype" class="gallery-media-large">
+                        <p class="gallery-caption">Prototype testing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Footer -->
+    <section class="content-section bg-soft">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="cta-text mb-4">
+                        ReachOne is where my interests in robotics, AI, and humanitarian systems come together.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary-custom">Contact</a>
+                        <a href="experience.html" class="btn btn-outline-custom">Back to Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Veronika Wang. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="mailto:veronikawang69@gmail.com" class="footer-link">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
